@@ -12,7 +12,7 @@
 <header>
   <div class="brand">FALL BURGER</div>
   <h1>Política de privacidad</h1>
-  <p class="meta">Versión 3.2 · Vigente desde el 1 de octubre de 2026 (solo cambia la descripción de los anuncios para menores de 13 años; los datos tratados son los mismos que en la versión 3) · Aplica a las apps <em>Fall Burger</em> para Android (<code>com.brunoquiroz.fallburger</code>) e iOS.</p>
+  <p class="meta">Versión 3.3 · Vigente desde el 1 de octubre de 2026 (cambia la descripción de los anuncios para menores de 13 años y la compra pasa a llamarse Pase Chef; los datos tratados son los mismos que en la versión 3) · Aplica a las apps <em>Fall Burger</em> para Android (<code>com.brunoquiroz.fallburger</code>) e iOS.</p>
   <nav class="lang" aria-label="Idioma"><a href="#es" aria-current="page">Español</a><a href="#en">English</a></nav>
 </header>
 
@@ -46,7 +46,7 @@
 <table>
   <tr><th>Dato</th><th>Ejemplo</th><th>Para qué</th></tr>
   <tr><td>Eventos de juego</td><td>nivel iniciado y completado, puntuación, estrellas, tipo de error (ingrediente equivocado, demasiado pronto), combos, potenciadores usados, desbloqueos, pasos del tutorial</td><td>Saber en qué nivel abandona la gente y qué reglas cuestan entender, para ajustar la dificultad y el tutorial</td></tr>
-  <tr><td>Compra</td><td>solo si compras "Quitar anuncios": el producto, el precio y la moneda, el identificador de la transacción y el recibo de la tienda (los envían el juego y la biblioteca de compras de Unity)</td><td>Medir las ventas y diagnosticar problemas con la compra</td></tr>
+  <tr><td>Compra</td><td>solo si compras "Pase Chef": el producto, el precio y la moneda, el identificador de la transacción y el recibo de la tienda (los envían el juego y la biblioteca de compras de Unity)</td><td>Medir las ventas y diagnosticar problemas con la compra</td></tr>
   <tr><td>Identificador de instalación</td><td>un código aleatorio que genera el SDK al activar las estadísticas (no es el número de serie, el IMEI ni el identificador publicitario)</td><td>Agrupar los eventos de una misma instalación y poder borrarlos cuando lo pidas</td></tr>
   <tr><td>Información del dispositivo</td><td>modelo, sistema operativo y versión, idioma, versión del juego, tamaño de pantalla</td><td>Detectar problemas que afecten a un tipo de dispositivo</td></tr>
   <tr><td>Dirección IP → país / región aproximada</td><td>la IP se usa en el servidor para deducir el país; Unity no nos muestra la IP</td><td>Estadística por país. No hay geolocalización precisa ni GPS</td></tr>
@@ -62,12 +62,12 @@
 <ul class="tight">
   <li><strong>Menores de 16 años:</strong> el juego configura el SDK de Google en modo "dirigido a niños" (menores de 13) o "menor de la edad de consentimiento" (13 a 15) y marca <strong>cada</strong> solicitud como no personalizada. No se usa el identificador publicitario para crear un perfil (con menores de 13 años el SDK ni siquiera lo transmite), no se muestra ningún formulario de consentimiento y solo se sirven anuncios de contenido apto para todos los públicos. En este caso, la base es nuestro interés legítimo en financiar un juego gratuito con anuncios contextuales, que no requieren tratar datos personales para perfilarte.</li>
   <li><strong>16 años o más:</strong> en el Espacio Económico Europeo, Reino Unido y Suiza, el juego muestra antes del primer anuncio el formulario de consentimiento de Google (User Messaging Platform), donde eliges si aceptas anuncios personalizados o solo anuncios no personalizados; en iOS también aparece la petición de "Seguimiento" de Apple. La base de los anuncios personalizados es tu <strong>consentimiento</strong>, que puedes retirar en <em>Ajustes → Privacidad y datos → Opciones de privacidad de anuncios</em>. Fuera de esas regiones, Google puede aplicar su propio tratamiento por defecto, sujeto a los controles de personalización de anuncios de tu cuenta de Google y de tu sistema operativo. Los anuncios se limitan a la clasificación de contenido PG de Google (supervisión de los padres).</li>
-  <li><strong>Sin anuncios:</strong> si compras "Quitar anuncios", el SDK de publicidad no vuelve a inicializarse y ninguno de estos datos sale del dispositivo.</li>
+  <li><strong>Sin anuncios:</strong> si compras "Pase Chef", el SDK de publicidad no vuelve a inicializarse y ninguno de estos datos sale del dispositivo.</li>
 </ul>
 <p>Google actúa como responsable independiente de esos datos. Cómo los usa se describe en la <a href="https://policies.google.com/privacy" rel="noopener">política de privacidad de Google</a> y en <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">cómo usa Google la información de sitios y apps que utilizan sus servicios</a>.</p>
 
 <h3>3.4 Compras dentro de la aplicación</h3>
-<p>El juego vende un único producto: <strong>Quitar anuncios</strong> (pago único, no consumible). El pago lo gestiona íntegramente Google Play o el App Store de Apple; nosotros nunca vemos tu método de pago ni tus datos de facturación. En tu dispositivo el juego guarda solo el hecho de que la compra existe, y lo vuelve a comprobar con la tienda en cada arranque para poder restaurarla en un teléfono nuevo. Si activaste las estadísticas (16+), el registro de la compra descrito en 3.2 también se envía a Unity Analytics.</p>
+<p>El juego vende un único producto: <strong>Pase Chef</strong> (pago único, no consumible: sin anuncios y con las recompensas de los vídeos incluidas). El pago lo gestiona íntegramente Google Play o el App Store de Apple; nosotros nunca vemos tu método de pago ni tus datos de facturación. En tu dispositivo el juego guarda solo el hecho de que la compra existe, y lo vuelve a comprobar con la tienda en cada arranque para poder restaurarla en un teléfono nuevo. Si activaste las estadísticas (16+), el registro de la compra descrito en 3.2 también se envía a Unity Analytics.</p>
 
 <h3>3.5 Datos que trata la tienda de aplicaciones</h3>
 <p>Google Play y Apple App Store tratan datos propios cuando descargas o actualizas el juego o realizas una compra (por ejemplo, tu cuenta de la tienda, el historial de compras y estadísticas de instalación). Nosotros no recibimos datos personales de esas plataformas; solo cifras agregadas. Esos tratamientos se rigen por las políticas de <a href="https://policies.google.com/privacy" rel="noopener">Google</a> y de <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple</a>.</p>
@@ -75,7 +75,7 @@
 <h3>3.6 Lo que el juego NO tiene</h3>
 <ul class="tight">
   <li>No tiene cuentas de usuario, ni inicio de sesión, ni registro.</li>
-  <li>No tiene suscripciones ni otras compras aparte de "Quitar anuncios". Las monedas del juego se ganan jugando y no se pueden comprar ni canjear por dinero.</li>
+  <li>No tiene suscripciones ni otras compras aparte de "Pase Chef". Las monedas del juego se ganan jugando y no se pueden comprar ni canjear por dinero.</li>
   <li>No muestra anuncios durante la partida, y nunca condiciona el progreso del juego a ver un anuncio.</li>
   <li>No tiene chat, mensajería ni contenido compartido entre jugadores.</li>
   <li>No accede a la cámara, el micrófono, los contactos, las fotos, la ubicación ni el calendario. Los permisos que declara son <em>Internet</em> y <em>estado de la red</em> (anuncios, compra y estadísticas), <em>Vibración</em> (respuesta háptica, desactivable en Ajustes) y <em>Facturación de Google Play</em> (la compra). El SDK de anuncios de Google añade el permiso del <em>identificador de publicidad</em> y los de las API de publicidad de Android; las bibliotecas de Android que incluye declaran además <em>mantener el dispositivo activo</em> y <em>servicio en primer plano</em>, que el juego no usa. Ninguno es un permiso que el sistema te pida confirmar.</li>
@@ -83,7 +83,7 @@
 </ul>
 
 <h2>4. Con quién se comparten los datos</h2>
-<p>Con <strong>Google</strong> (Google LLC y Google Ireland Ltd.) como responsable independiente de la publicidad descrita en 3.3, salvo que hayas comprado "Quitar anuncios". Y con <strong>Unity Technologies</strong> (Unity Technologies ApS y Unity Technologies, Inc.) como encargado del tratamiento de las estadísticas descritas en 3.2, y solo si las has activado. Unity trata los datos siguiendo nuestras instrucciones y sus <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener">condiciones para jugadores</a>; no le autorizamos a usarlos para sus propios fines publicitarios.</p>
+<p>Con <strong>Google</strong> (Google LLC y Google Ireland Ltd.) como responsable independiente de la publicidad descrita en 3.3, salvo que hayas comprado "Pase Chef". Y con <strong>Unity Technologies</strong> (Unity Technologies ApS y Unity Technologies, Inc.) como encargado del tratamiento de las estadísticas descritas en 3.2, y solo si las has activado. Unity trata los datos siguiendo nuestras instrucciones y sus <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener">condiciones para jugadores</a>; no le autorizamos a usarlos para sus propios fines publicitarios.</p>
 <p>No vendemos datos personales ni los cedemos a otros terceros. Podríamos revelar datos si una ley o una autoridad competente nos obliga a ello.</p>
 
 <h2>5. Transferencias internacionales</h2>
@@ -124,7 +124,7 @@
 
 <section id="en" lang="en">
 <h1>Privacy Policy</h1>
-<p class="meta">Version 3.2 · Effective 1 October 2026 (only the description of the ads for players under 13 changes; the data processed is the same as in version 3) · Applies to the <em>Fall Burger</em> apps for Android (<code>com.brunoquiroz.fallburger</code>) and iOS.</p>
+<p class="meta">Version 3.3 · Effective 1 October 2026 (the description of the ads for players under 13 changes and the purchase is renamed Chef Pass; the data processed is the same as in version 3) · Applies to the <em>Fall Burger</em> apps for Android (<code>com.brunoquiroz.fallburger</code>) and iOS.</p>
 
 <div class="box">
   <p><strong>In one sentence:</strong> Fall Burger is a free offline game with no accounts, funded by ads you can remove for good with a single purchase. By default it <strong>collects no personal data for us</strong>. Gameplay statistics (linked to a random installation identifier, not to your identity) are sent <strong>only</strong> if you are 16 or older <strong>and</strong> you explicitly turn them on. Ads are served by Google AdMob: under 16 they are always <strong>non-personalized</strong>; at 16 or older, where the law requires it the game first asks whether you accept personalized ads, and you can change that answer under <em>Settings → Privacy and data</em>.</p>
@@ -154,7 +154,7 @@
 <table>
   <tr><th>Data</th><th>Example</th><th>Purpose</th></tr>
   <tr><td>Gameplay events</td><td>level started and completed, score, stars, kind of mistake (wrong ingredient, too early), combos, power-ups used, unlocks, tutorial steps</td><td>Learn where players quit and which rules are hard to grasp, to tune difficulty and the tutorial</td></tr>
-  <tr><td>Purchase</td><td>only if you buy "Remove ads": the product, price and currency, the transaction identifier and the store receipt (sent by the game and by Unity's in-app purchasing library)</td><td>Measure sales and diagnose purchase problems</td></tr>
+  <tr><td>Purchase</td><td>only if you buy "Chef Pass": the product, price and currency, the transaction identifier and the store receipt (sent by the game and by Unity's in-app purchasing library)</td><td>Measure sales and diagnose purchase problems</td></tr>
   <tr><td>Installation identifier</td><td>a random code the SDK generates when statistics are switched on (not the serial number, IMEI or advertising ID)</td><td>Group the events of one installation, and be able to delete them when you ask</td></tr>
   <tr><td>Device information</td><td>model, operating system and version, language, game version, screen size</td><td>Detect problems affecting a kind of device</td></tr>
   <tr><td>IP address → approximate country/region</td><td>the IP is used server-side to derive the country; Unity does not show us the IP</td><td>Per-country statistics. No precise location, no GPS</td></tr>
@@ -170,12 +170,12 @@
 <ul class="tight">
   <li><strong>Under 16:</strong> the game configures Google's SDK for "child-directed" (under 13) or "under the age of consent" (13 to 15) treatment and flags <strong>every</strong> request as non-personalized. The advertising identifier is not used to build a profile (under 13 the SDK does not even transmit it), no consent form is shown, and only ads rated for general audiences are served. The basis here is our legitimate interest in funding a free game with contextual ads, which do not require processing personal data to profile you.</li>
   <li><strong>16 or older:</strong> in the European Economic Area, the United Kingdom and Switzerland the game shows Google's consent form (User Messaging Platform) before the first ad, where you choose between personalized and non-personalized ads; on iOS, Apple's "Tracking" prompt appears as well. The basis for personalized ads is your <strong>consent</strong>, which you can withdraw under <em>Settings → Privacy and data → Ad privacy options</em>. Elsewhere, Google may apply its default treatment, subject to the ad personalization controls of your Google account and your operating system. Ads are limited to Google's PG content rating (parental guidance).</li>
-  <li><strong>No ads:</strong> once you buy "Remove ads", the advertising SDK is never initialised again and none of this data leaves the device.</li>
+  <li><strong>No ads:</strong> once you buy "Chef Pass", the advertising SDK is never initialised again and none of this data leaves the device.</li>
 </ul>
 <p>Google acts as an independent controller of that data. How it uses it is described in <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a> and in <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">how Google uses information from sites or apps that use its services</a>.</p>
 
 <h3>3.4 In-app purchases</h3>
-<p>The game sells a single product: <strong>Remove ads</strong> (one-time, non-consumable). Payment is handled entirely by Google Play or the Apple App Store; we never see your payment method or billing details. On your device the game stores only the fact that the purchase exists, and re-checks it with the store at every launch so it can be restored on a new phone. If you turned statistics on (16+), the purchase record described in 3.2 is also sent to Unity Analytics.</p>
+<p>The game sells a single product: <strong>Chef Pass</strong> (one-time, non-consumable: no ads, with the rewards of the videos included). Payment is handled entirely by Google Play or the Apple App Store; we never see your payment method or billing details. On your device the game stores only the fact that the purchase exists, and re-checks it with the store at every launch so it can be restored on a new phone. If you turned statistics on (16+), the purchase record described in 3.2 is also sent to Unity Analytics.</p>
 
 <h3>3.5 Data processed by the app store</h3>
 <p>Google Play and the Apple App Store process their own data when you download or update the game or make a purchase (for example your store account, purchase history and install statistics). We receive no personal data from those platforms, only aggregate figures. Those operations are governed by <a href="https://policies.google.com/privacy" rel="noopener">Google's</a> and <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's</a> privacy policies.</p>
@@ -183,7 +183,7 @@
 <h3>3.6 What the game does NOT have</h3>
 <ul class="tight">
   <li>No user accounts, sign-in or registration.</li>
-  <li>No subscriptions and no purchases other than "Remove ads". In-game coins are earned by playing and cannot be bought or exchanged for money.</li>
+  <li>No subscriptions and no purchases other than "Chef Pass". In-game coins are earned by playing and cannot be bought or exchanged for money.</li>
   <li>No ads during play, and progress never depends on watching an ad.</li>
   <li>No chat, messaging or content shared between players.</li>
   <li>No access to camera, microphone, contacts, photos, location or calendar. The permissions it declares are <em>Internet</em> and <em>network state</em> (ads, the purchase and statistics), <em>Vibration</em> (haptic feedback, can be switched off in Settings) and <em>Google Play Billing</em> (the purchase). Google's ad SDK adds the <em>advertising ID</em> permission and those of Android's advertising APIs; the Android libraries it brings also declare <em>keep the device awake</em> and <em>foreground service</em>, which the game does not use. None of them is a permission the system asks you to confirm.</li>
@@ -191,7 +191,7 @@
 </ul>
 
 <h2>4. Who the data is shared with</h2>
-<p>With <strong>Google</strong> (Google LLC and Google Ireland Ltd.) as an independent controller for the advertising described in 3.3, unless you bought "Remove ads". And with <strong>Unity Technologies</strong> (Unity Technologies ApS and Unity Technologies, Inc.) as processor of the statistics described in 3.2, and only if you enabled them. Unity processes the data under our instructions and its <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener">player privacy terms</a>; we do not authorise Unity to use it for its own advertising purposes.</p>
+<p>With <strong>Google</strong> (Google LLC and Google Ireland Ltd.) as an independent controller for the advertising described in 3.3, unless you bought "Chef Pass". And with <strong>Unity Technologies</strong> (Unity Technologies ApS and Unity Technologies, Inc.) as processor of the statistics described in 3.2, and only if you enabled them. Unity processes the data under our instructions and its <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener">player privacy terms</a>; we do not authorise Unity to use it for its own advertising purposes.</p>
 <p>We do not sell personal data or pass it to other third parties. We may disclose data where a law or a competent authority requires it.</p>
 
 <h2>5. International transfers</h2>
